@@ -1,0 +1,148 @@
+/* ====== 기본 설정 ====== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    padding: 0;
+}
+
+/* ====== 계산기 컨테이너 스타일 ====== */
+.calculator {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* ====== 입력 라벨 스타일 ====== */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* ====== 입력 필드와 드롭다운 스타일 ====== */
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* ====== 공통 버튼 스타일 ====== */
+button {
+    background-color: #4CAF50; /* 기본 버튼 색상: 초록색 */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #45a049; /* 버튼 호버 색상 */
+}
+
+/* ====== 계산하기 버튼 스타일 ====== */
+#calculateButton {
+    background-color: #007BFF; /* 계산하기 버튼 색상: 파란색 */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#calculateButton:hover {
+    background-color: #0056b3; /* 호버 시 진한 파란색 */
+}
+
+/* ====== 모달 전체 스타일 ====== */
+.modal {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    align-items: center; /* 수직 정렬 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 어두운 반투명 배경 */
+    z-index: 9999; /* 가장 위에 표시 */
+}
+
+/* ====== 모달 콘텐츠 스타일 ====== */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* 계산기와 동일한 최대 너비 */
+    box-sizing: border-box;
+    text-align: center; /* 내용 가운데 정렬 */
+}
+
+/* ====== 입력 필드 및 셀렉트 박스 스타일 ====== */
+.modal-content select, 
+.modal-content input {
+    width: 100%; /* 입력 필드와 버튼 너비 통일 */
+    padding: 10px; /* 패딩 통일 */
+    margin-bottom: 15px; /* 하단 여백 추가 */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* ====== 모달 버튼 공통 스타일 ====== */
+.modal-content button {
+    width: 100%; /* 버튼 너비 통일 */
+    padding: 10px; /* 패딩 통일 */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* 버튼 간 간격 통일 */
+}
+
+/* ====== 확인 버튼 스타일 ====== */
+.modal-content button#confirmGiftType {
+    background-color: #FF4C4C; /* 붉은색 */
+}
+
+.modal-content button#confirmGiftType:hover {
+    background-color: #E03B3B; /* 어두운 붉은색 */
+}
+
+/* ====== 닫기 버튼 스타일 ====== */
+.modal-content button#closeGiftModal {
+    background-color: #808080; /* 회색 */
+}
+
+.modal-content button#closeGiftModal:hover {
+    background-color: #606060; /* 어두운 회색 */
+}
+
+.modal-content button:hover {
+    background-color: #E03B3B; /* 호버 시 진한 붉은색 */
+}
+
+/* ====== 버튼 세로 정렬 스타일 ====== */
+#actionButtons {
+    display: block; /* 버튼 컨테이너를 세로 정렬 */
+}
+
+#actionButtons button {
+    display: block;
+    width: 100%; /* 입력 필드와 동일한 너비 */
+    margin-bottom: 15px;
+}
